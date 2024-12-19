@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quaternius - 3D Artist Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .logo-container {
+            text-align: center;
+            max-width: 225px;  /* Increased by 1.5x from 150px */
+            margin: 0 auto;
+        }
+
+        .logo-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 1rem;
+            flex: 1;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);  /* Fixed 3 columns */
+            gap: 1rem;
+        }
+
+        .grid-item {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .grid-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        footer {
+            background-color: white;
+            padding: 0.5rem 0;
+            text-align: center;
+            box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            bottom: 0;
+        }
+
+        .contact {
+            font-size: 1rem;
+            color: #4a5568;
+        }
+
+        .contact a {
+            color: #4299e1;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="https://assetstore.unity.com/publishers/19318?preview=1" target="_blank">
+                <img src="logo.png" alt="Quaternius Logo">
+            </a>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="grid">
+            <div class="grid-item">
+                <img src="scifiessentialskit.jpg" alt="Sci-Fi Essentials Kit">
+            </div>
+            <div class="grid-item">
+                <img src="scifiessentialskit2.jpg" alt="Sci-Fi Essentials Kit 2">
+            </div>
+            <div class="grid-item">
+                <img src="piratekit.jpg" alt="Pirate Kit">
+            </div>
+            <div class="grid-item">
+                <img src="zombieapocalypse.jpg" alt="Zombie Apocalypse">
+            </div>
+            <div class="grid-item">
+                <img src="modularscifimegakit.jpg" alt="Modular Sci-Fi Mega Kit">
+            </div>
+            <div class="grid-item">
+                <img src="modularscifimegakit2.jpg" alt="Modular Sci-Fi Mega Kit 2">
+            </div>
+            <div class="grid-item">
+                <img src="stylizednaturemegakit.jpg" alt="Stylized Nature Mega Kit">
+            </div>
+            <div class="grid-item">
+                <img src="stylizednaturemegakit2.jpg" alt="Stylized Nature Mega Kit 2">
+            </div>
+            <div class="grid-item">
+                <img src="stylizednaturemegakit3.jpg" alt="Stylized Nature Mega Kit 3">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contact">
+            Contact: <a href="mailto:laulhet@gmail.com">laulhet@gmail.com</a>
+        </div>
+    </footer>
+</body>
+</html>
